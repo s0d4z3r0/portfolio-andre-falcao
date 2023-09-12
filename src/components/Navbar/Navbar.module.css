@@ -1,0 +1,22 @@
+.navbar{
+    color: var(--color-oposity-color);
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menuLogo{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    gap: .5rem;
+}
+.menuLogo button{
+    border: none;
+    background-color: transparent;
+    color: var(--color-oposity-color);
+    font-size: 1rem;
+    font-family: var(--font-title);
+    cursor: pointer;
+}

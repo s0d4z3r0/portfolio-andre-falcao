@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron&display=swap');
+
+:root{
+  --color-primary: #5FDB33;
+  --color-secondary: #49A827;
+  --color-tertiary: #285C15;
+  --color-quaternary: #94E177;
+
+  --color-default: #E1E1E1;
+  --color-oposity-color: #1C1C1C;
+
+  --font-title: 'Orbitron', sans-serif;
+  --font-text: 'Bebas Neue', sans-serif;
+
+  --size-title: 1.8rem;
+  --size-text: 1.2rem;
+  --size-subtext: .8rem;
+}
+
+[className='dark']{
+  --color-default: #1C1C1C;
+  --color-oposity-color: #efefef;
+  
+  --color-primary: #49A827;
+  --color-secondary: #5FDB33;
+  --color-tertiary: #285C15;
+  --color-quaternary: #49A827;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: ease-in-out 100ms;
+}
+
