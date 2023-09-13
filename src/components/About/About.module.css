@@ -1,0 +1,78 @@
+.about{
+    padding: 5rem 0;
+    color: var(--color-oposity-color);
+}
+.who, .professional{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-title);
+    width: 100%;
+    height: 15.5rem;
+    padding: var(--size-subtext);
+    position: relative;
+}
+.who h2, 
+.professional h2{
+    font-family: var(--font-title);
+    font-size: var(--size-title);
+    margin-left: 2.5rem;
+    border-left: 5px solid var(--color-secondary);
+    text-align: end;
+}
+.professional h2{
+    text-align: left;
+    margin-left: 0rem;
+    margin-right: 2.5rem;
+    border-left: none;
+    border-right: 5px solid var(--color-secondary);
+}
+.who p, .phrase h4, .professional p{
+    font-family: var(--font-text);
+    font-size: var(--size-text);
+    text-align: justify;
+    font-weight: bold;
+}
+.phrase h4{
+    margin: 2.5rem auto;
+    width: 15rem;
+    text-align: center;
+    color: var(--color-secondary);
+}
+.who p, .professional p{
+    height: 9rem;
+    overflow: hidden;
+}
+.professional p{
+    margin-bottom: .2rem;
+}
+.layerFadeWho{
+    height: 14.5rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0px -20px 10px 5px var(--color-default) inset;
+
+}
+.who button, .professional button{
+    position: absolute; 
+    border: none;
+    cursor: pointer;
+    bottom: 0;
+    right: var(--size-subtext);
+    font-size: var(--size-text);
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--color-secondary);
+}
+.who button:active, .professional button:active{
+    box-shadow: none;
+    border: none;
+    margin-right: 0rem;
+    margin-top: 0rem;
+    background-color: transparent;
+    color: var(--color-primary);
+    border-bottom: none;
+    border-left: none;
+}

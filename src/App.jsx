@@ -3,6 +3,7 @@ import styles from "./App.module.css";
 import DarkMode from "./components/DarkMode/DarkMode";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
+import About from "./components/About/About";
 
 function App() {
   const [theme, setTheme] = useState(true)
@@ -15,7 +16,10 @@ function App() {
         <Navbar />
         <DarkMode theme={theme} setTheme={setTheme} setDarkOrLightMode={setDarkOrLightMode}/>
       </div>
-      <Home darkOrLightMode={darkOrLightMode}/>
+      <div className={styles.content}>
+        <Home darkOrLightMode={darkOrLightMode}/>
+        <About/>
+      </div>
     </>
   );
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Orbitron&display=swap');
 
 :root{
   --color-primary: #5FDB33;
@@ -8,12 +8,14 @@
 
   --color-default: #E1E1E1;
   --color-oposity-color: #1C1C1C;
+  --color-black: #1c1c1c;
 
   --font-title: 'Orbitron', sans-serif;
-  --font-text: 'Bebas Neue', sans-serif;
+  --font-subtitle: 'Bebas Neue', sans-serif;
+  --font-text: 'Inter', sans-serif;;
 
   --size-title: 1.8rem;
-  --size-text: 1.2rem;
+  --size-text: 1rem;
   --size-subtext: .8rem;
 }
 
@@ -32,5 +34,43 @@
   padding: 0;
   box-sizing: border-box;
   transition: ease-in-out 100ms;
+}
+body{
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+  width: 6px;
+  background: var(--color-black);
+}
+body::-webkit-scrollbar-thumb{
+  background-color: var(--color-secondary);
+  border-radius: 5px;
+  border: 1px solid var(--color-black);
+}
+
+button{
+  font-family: var(--font-subtitle);
+  font-size: var(--font-text);
+  color: var(--color-oposity-color);
+  padding: 0.1rem 2rem 0rem 2rem;
+  border: none;
+  border-top: 1px solid var(--color-quaternary);
+  border-right: 1px solid var(--color-quaternary);
+  border-radius: 6px;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  box-shadow: -1px 2px 0px 1px var(--color-tertiary);
+  transition: 50ms;
+  -webkit-tap-highlight-color: transparent;
+}
+button:active{
+  box-shadow: none;
+  border: none;
+  margin-right: .3rem;
+  margin-top: .4rem;
+  background-color: var(--color-secondary);
+  border-bottom: 1px solid var(--color-tertiary);
+  border-left: 1px solid var(--color-tertiary);
 }
 

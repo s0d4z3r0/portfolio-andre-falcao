@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 .menuLogo{
     display: flex;
@@ -19,4 +20,6 @@
     font-size: 1rem;
     font-family: var(--font-title);
     cursor: pointer;
+    box-shadow: none;
+    padding: 0;
 }

@@ -4,7 +4,6 @@
     background-color: var(--color-default);
     position: absolute;
     top: 0;
-    z-index: -1;
 }
 .layer{
     width: 100%;
@@ -40,7 +39,7 @@
     width: 100%;
     text-align: center;
     font-family: var(--font-title);
-    font-size: var(--size-title);
+    font-size: var(--size-description);
     color: var(--color-primary);
     text-shadow: -1px 1px 0px var(--color-tertiary);
 }
@@ -50,9 +49,12 @@
 .intro p{
     width: 100%;
     text-align: center;
-    font-family: var(--font-text);
-    font-size: var(--size-text);
+    font-family: var(--font-subtitle);
+    font-size: var(--size-title);
     color: var(--color-default);
+}
+.intro p:nth-of-type(2){
+    font-size: var(--size-description);
 }
 .more{
     width: 100%;
@@ -60,29 +62,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.more button{
-    font-family: var(--font-text);
-    font-size: var(--font-text);
-    color: var(--color-oposity-color);
-    padding: 0.1rem 2rem 0rem 2rem;
-    border: none;
-    border-top: 1px solid var(--color-quaternary);
-    border-right: 1px solid var(--color-quaternary);
-    border-radius: 6px;
-    background-color: var(--color-primary);
-    cursor: pointer;
-    box-shadow: -1px 2px 0px 1px var(--color-tertiary);
-    transition: 50ms
-}
-.more button:active{
-    box-shadow: none;
-    border: none;
-    margin-right: .3rem;
-    margin-top: .4rem;
-    background-color: var(--color-secondary);
-    border-bottom: 1px solid var(--color-tertiary);
-    border-left: 1px solid var(--color-tertiary);
 }
 
 @keyframes transicaoLight {

@@ -11,9 +11,12 @@ const Home = ({ darkOrLightMode }) => {
 
       <div className={styles.intro}>
         <h2>
-          Hello, World! <span>&#127758;</span>
+          Hello, World! 
+          {/* <span>&#127758;</span> */}
         </h2>
-        <p>&#128075; Eu sou André Falcão</p>
+        <p>
+          {/* &#128075;  */}
+          Eu sou André Falcão</p>
         <p>| Front-End Developer |</p>
         <div className={styles.more}>
           <button>Mais sobre</button>
