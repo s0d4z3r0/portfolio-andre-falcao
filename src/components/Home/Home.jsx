@@ -2,7 +2,7 @@ import styles from "./Home.module.css";
 
 const Home = ({ darkOrLightMode }) => {
   return (
-    <div className={styles.home}>
+    <section className={styles.home}>
       <div className={styles.layer}>
         <div
           className={darkOrLightMode === "light" ? styles.light : styles.dark}
@@ -22,7 +22,7 @@ const Home = ({ darkOrLightMode }) => {
           <button>Mais sobre</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

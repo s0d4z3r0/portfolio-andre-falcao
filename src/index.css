@@ -7,8 +7,10 @@
   --color-quaternary: #94E177;
 
   --color-default: #E1E1E1;
+  --color-emph: #ebebeb;
   --color-oposity-color: #1C1C1C;
   --color-black: #1c1c1c;
+  --color-shadow: #aaa;
 
   --font-title: 'Orbitron', sans-serif;
   --font-subtitle: 'Bebas Neue', sans-serif;
@@ -21,7 +23,10 @@
 
 [className='dark']{
   --color-default: #1C1C1C;
+  --color-emph: #161616;
   --color-oposity-color: #efefef;
+  --color-black: #1c1c1c;
+  --color-shadow: #3d3d3d;
   
   --color-primary: #49A827;
   --color-secondary: #5FDB33;
@@ -61,8 +66,13 @@ button{
   background-color: var(--color-primary);
   cursor: pointer;
   box-shadow: -1px 2px 0px 1px var(--color-tertiary);
-  transition: 50ms;
+  transition: 50ms ease-in-out;
   -webkit-tap-highlight-color: transparent;
+}
+button:hover{
+  background-color: rgba(73, 168, 39, .9);
+  border-top: 1px solid rgba(73, 168, 39, .9);
+  border-right: 1px solid rgba(73, 168, 39, .9);
 }
 button:active{
   box-shadow: none;

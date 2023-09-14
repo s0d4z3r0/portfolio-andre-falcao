@@ -1,14 +1,34 @@
+import { useState } from "react";
 import styles from "./About.module.css";
 
 const About = () => {
+  // Definir idade
   const date = new Date();
   const birthday = new Date("1992-01-09");
   const difference = date - birthday;
   const age = Math.floor(difference / (365.25 * 24 * 60 * 60 * 1000));
 
+  const [showWho, setShowWho] = useState(false)
+  const [showProfessional, setShowProfessional] = useState(false)
+
+  const handleShowCard = (show) => {
+    if(show === 'who'){
+      setShowWho(!showWho)
+    }else{
+      setShowProfessional(!showProfessional)
+    }
+  }
+
+  // const card = showCard ? styles.show : styles.hide
+
   return (
-    <div className={styles.about}>
-      <div className={styles.who}>
+    <section className={styles.about}>
+      <div className={styles.shape1}>
+        <div className={styles.triangle1}></div>
+        <div className={styles.triangle2}></div>
+        <div className={styles.triangle3}></div>
+      </div>
+      <div className={`${styles.who} ${showWho ? styles.show : styles.hide}`}>
         <h2>Quem sou eu?</h2>
         <p>
           Olá, me chamo André Vinícius Rodrigues Falcão, tenho {age} anos e sou
@@ -24,24 +44,23 @@ const About = () => {
           sou da geração do CS 1.5. E um Lolzinho, tu curte? Só não vai me dizer
           que joga de Yasuo. Já jogou Ragnarok ou WOW? bom demais, né não?! E
           filmes?! Dormiu bem depois de ter assistido Atividade Paranormal? Qual
-          sua comida favorita? A minha começa com "To" e termina com "das". Mas
+          sua comida favorita? A minha começa com &#34;To&#34; e termina com &#34;das&#34;. Mas
           não dá só pra comer né?! Você ta cuidando da saúde?! Tá fazendo
           atividade física?! Se sim, é isso aí!!! Assiste algum esporte? Futebol
           americano é muito bom, vai por mim!! Enfim... A vida é bela, basta
           você encontrar a felicidade nas coisas simples da vida.
         </p>
-        <div className={styles.layerFadeWho}></div>
-        <button>ver mais</button>
+        <span className={styles.more} onClick={() => handleShowCard('who')}>{showWho ? 'Ver menos' : 'Ver mais'}</span>
       </div>
 
       <div className={styles.phrase}>
         <h4>
-          "Mas felicidade é poder estar com quem você gosta em algum lugar." -
+        &#34;Mas felicidade é poder estar com quem você gosta em algum lugar.&#34; -
           CBJr
         </h4>
       </div>
 
-      <div className={styles.professional}>
+      <div className={`${styles.professional} ${showProfessional ? styles.show : styles.hide}`}>
         <h2>E como profissional?</h2>
         <p>
           Formado em Gestão Pública pela universidade Cruzeiro do Sul, com MBA
@@ -68,12 +87,16 @@ const About = () => {
           mapeando pontos fortes da organização e fortalecendo pontos fracos
           também pode-se esperar de mim. Uma pessoa com sede de aprender e
           ensinar. Pronto para encarar desafios, motivar e fortalecer o espirito
-          de equipe na organização. Let's to code!
+          de equipe na organização. Let&#39;s to code!
         </p>
-        <div className={styles.layerFadeWho}></div>
-        <button>ver mais</button>
+        <span className={styles.more} onClick={() => handleShowCard('professional')}>{showProfessional ? 'Ver menos' : 'Ver mais'}</span>
       </div>
-    </div>
+      <div className={styles.shape2}>
+        <div className={styles.triangle1}></div>
+        <div className={styles.triangle2}></div>
+        <div className={styles.triangle3}></div>
+      </div>
+    </section>
   );
 };
 
