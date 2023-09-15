@@ -4,6 +4,7 @@ import DarkMode from "./components/DarkMode/DarkMode";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   const [theme, setTheme] = useState(true)
@@ -19,6 +20,7 @@ function App() {
       <div className={styles.content}>
         <Home darkOrLightMode={darkOrLightMode}/>
         <About/>
+        <Projects/>
       </div>
     </>
   );

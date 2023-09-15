@@ -19,8 +19,6 @@ const About = () => {
     }
   }
 
-  // const card = showCard ? styles.show : styles.hide
-
   return (
     <section className={styles.about}>
       <div className={styles.shape1}>
@@ -68,17 +66,17 @@ const About = () => {
           tinha certo conhecimento, na área de alimentação. Da área de
           alimentação resolvi então entrar de cabeça na área da programação, uma
           área que sempre tive interesse, mas sempre deixei de lado por achar
-          que seria difícil aprender algo do zero. Na programação começei a
+          que seria difícil aprender algo do zero. Na programação comecei a
           estudar por conta própria em 2022 HTML, CSS e JS através de vídeos
           gratuitos no YouTube. No final de 2022 fiz um curso de Desenvolvedor
           Front-End pelo SENAI no programa Inova DF Tech e no inicio de 2023 fiz
           o curso de Desenvolvedor Back-End pela mesma instituição. Migrando de
           área, resolvi alterar a rota que estava traçando na minha vida
-          profissional. Após adiquirir um certo conhecimento de Front-End com os
+          profissional. Após adquirir um certo conhecimento de Front-End com os
           cursos realizados, hoje continuo estudando por conta própria e me
-          dedicando a realizar projetos para compor este portifólio e criar
-          novas soluções para o dia a dia. Este portifólio foi desenvolvido 100%
-          utilizando técnicas e conhecimentos adiquiridos como HTML, CSS, JS e
+          dedicando a realizar projetos para compor este portfólio e criar
+          novas soluções para o dia a dia. Este portfólio foi desenvolvido 100%
+          utilizando técnicas e conhecimentos adquiridos como HTML, CSS, JS e
           JSX, React + Vite, componentização, hooks, entre outros. Como
           profissional, o que pode se esperar de mim é um colaborador que veste
           a camisa da organização e se compromete com metas. Pensamento
@@ -86,7 +84,7 @@ const About = () => {
           visão mais Tática da organização para saber lidar com concorrências,
           mapeando pontos fortes da organização e fortalecendo pontos fracos
           também pode-se esperar de mim. Uma pessoa com sede de aprender e
-          ensinar. Pronto para encarar desafios, motivar e fortalecer o espirito
+          ensinar. Pronto para encarar desafios, motivar e fortalecer o espírito
           de equipe na organização. Let&#39;s to code!
         </p>
         <span className={styles.more} onClick={() => handleShowCard('professional')}>{showProfessional ? 'Ver menos' : 'Ver mais'}</span>
