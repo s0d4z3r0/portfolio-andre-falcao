@@ -16,10 +16,21 @@
 .menuLogo button{
     border: none;
     background-color: transparent;
-    color: var(--color-oposity-color);
+    color: var(--color-secondary);
     font-size: 1rem;
     font-family: var(--font-title);
     cursor: pointer;
     box-shadow: none;
     padding: 0;
 }
+.menuLogo button:hover{
+    background-color: transparent;
+    border: none;
+  }
+  .menuLogo button:active{
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+  }

@@ -1,0 +1,90 @@
+.footer{
+    padding: 2rem 0 .5rem;
+    width: 100%;
+    background-color: var(--color-emph);
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icons ul{
+    display: flex;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 14rem;
+    background-color: var(--color-default);
+    box-shadow: -2px 2px 5px var(--color-shadow);
+    padding: .5rem .5rem .3rem;
+    border-radius: 8px;
+}
+
+.icons ul li{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 25px;
+}
+.icons ul li a{
+    text-decoration: none;
+    color: var(--color-oposity-color);
+    font-size: var(--size-titleText);
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+}
+.icons ul li a i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: 300ms ease-in-out;
+}
+.icons ul li:nth-child(1) a i:hover{
+    filter: drop-shadow(0px 0px 3px var(--color-oposity-color));
+    color: var(--color-default);
+}
+.icons ul li:nth-child(2) a i:hover{
+    filter: drop-shadow(0px 0px 3px #086ba4);
+    color: var(--color-default);
+}
+.icons ul li:nth-child(3) a i:hover{
+    filter: drop-shadow(0px 0px 3px red);
+    color: var(--color-default);
+}
+.icons ul li:nth-child(4) a i:hover{
+    filter: drop-shadow(0px 0px 3px #a8795d);
+    color: var(--color-default);
+}
+.icons ul li:nth-child(5) a i:hover{
+    filter: drop-shadow(0px 0px 3px #15f12b);
+    color: var(--color-default);
+}
+
+.createdBy{
+    display: flex;
+    justify-content: center;
+}
+.createdBy p{
+    background-color: var(--color-default);
+    box-shadow: -2px 2px 5px var(--color-shadow);
+    width: fit-content;
+    padding: .3rem .5rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    font-family: var(--font-subtitle);
+    font-size: var(--size-text);
+    text-align: center;
+    color: var(--color-oposity-color);
+}
+.createdBy p span a{
+    text-decoration: none;
+    color: var(--color-secondary);
+    transition: 300ms ease-in-out;
+}
+.createdBy p span a:hover{
+    color: var(--color-primary);
+}
+
+.icons ul li a i:active, .createdBy p span a:active{
+-webkit-tap-highlight-color: transparent;
+}

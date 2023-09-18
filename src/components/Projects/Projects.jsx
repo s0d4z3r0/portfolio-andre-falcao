@@ -12,42 +12,47 @@ const Projects = () => {
 
   const handleShowDescription = () => setShowDescription(!showDescription);
 
+  const TotemGit = "https://github.com/s0d4z3r0/totem-react";
+  const TotemView = "https://s0d4z3r0.github.io/totem-react/";
+
   return (
     <section className={styles.projects}>
       <h2>Projetos</h2>
       <div className={styles.card}>
         <div className={styles.title}>
           <h3>Sistema de Totem - Hamburgueria</h3>
-        </div>        
+        </div>
         <div className={styles.icons}>
           <i>
-            <img src={html} alt="html" title="HTML 5"/>
+            <img src={html} alt="html" title="HTML 5" />
           </i>
           <i>
-            <img src={css} alt="css" title="CSS 3"/>
+            <img src={css} alt="css" title="CSS 3" />
           </i>
           <i>
-            <img src={js} alt="js" title="JavaScript ES6"/>
+            <img src={js} alt="js" title="JavaScript ES6" />
           </i>
           <i>
-            <img src={bs} alt="bs" title="Bootstrap v5.3"/>
+            <img src={bs} alt="bs" title="Bootstrap v5.3" />
           </i>
           <i>
-            <img src={react} alt="react" title="React"/>
+            <img src={react} alt="react" title="React" />
           </i>
         </div>
         <div className={styles.image}>
           <img src={thumb} alt="thumb projeto 1" />
-        <div className={styles.view}>
-            <i className={`bi bi-github ${styles.github}`}>
-                <a href="" target="_blank"></a>
+          <div className={styles.view}>
+            <a href={TotemGit} target="_blank" rel="noreferrer">
+              <i className={`bi bi-github ${styles.github}`}>
                 <span className={styles.tooltip}>Repositório GitHub</span>
-            </i>
-            <i className={`bi bi-eye ${styles.eye}`}>
-                <a href="" target="_blank"></a>
+              </i>
+            </a>
+            <a href={TotemView} target="_blank" rel="noreferrer">
+              <i className={`bi bi-eye ${styles.eye}`}>
                 <span className={styles.tooltip}>Visualizar</span>
-            </i>
-        </div>
+              </i>
+            </a>
+          </div>
         </div>
         <div
           className={`${styles.description} ${
@@ -60,7 +65,9 @@ const Projects = () => {
             reprehenderit debitis nam hic? Laboriosam maxime tempora quidem ea
             alias atque dolorum!
           </p>
-          <span className={styles.more} onClick={handleShowDescription}>{showDescription ? 'Ver menos' : 'Ver mais'}</span>
+          <span className={styles.more} onClick={handleShowDescription}>
+            {showDescription ? "Ver menos" : "Ver mais"}
+          </span>
         </div>
       </div>
     </section>

@@ -77,18 +77,20 @@
     color: var(--color-secondary);
     padding: 0.3rem 0;
 }
-.view i{
+.view a{
+    text-decoration: none;
+    color: var(--color-secondary);
     display: flex;
     font-size: 1.3rem;
     border-radius: 50%;
     position: relative;
+    transition: 300ms ease-in-out;
 }
-.view i:hover, .view i:active{
+.view a:hover, .view a:active{
     color: var(--color-primary);
     -webkit-tap-highlight-color: transparent;
 }
 .github, .eye{
-    cursor: pointer;
     display: block;
     position: relative;
     width: 1.3rem;
