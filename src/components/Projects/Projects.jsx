@@ -1,75 +1,30 @@
 import styles from "./Projects.module.css";
-import html from "../../assets/html.png";
-import css from "../../assets/css.png";
-import js from "../../assets/js.png";
-import bs from "../../assets/bs.png";
-import react from "../../assets/react.png";
-import thumb from "../../assets/thumb.jpg";
-import { useState } from "react";
+import CardsProjects from "../CardsProjects/CardsProjects";
+
+import thumbP1 from "../../assets/thumb.jpg";
 
 const Projects = () => {
-  const [showDescription, setShowDescription] = useState(false);
 
-  const handleShowDescription = () => setShowDescription(!showDescription);
+  const projects = [
+    {
+      name:'Sistema de Totem - Hamburgueria',
+      description: 'Este projeto foi realizado com HTML, CSS e JS (JSX - React + Vite), sendo idealizado um projeto de totem para fazer pedidos em estabelecimentos físicos. Conta com uma tela inicial (HOME), seguindo para uma tela de fazer o pedido (MENU). Foi utilizado vários conhecimentos aprendidos do framework React como componentização, router-dom, hooks, css modules, redux, criação e reaproveitamento de states e modais. Foi trabalhado a responsividade seguindo o princípio mobile first, com media querys mínima de 320px.',
+      html: true,
+      css: true,
+      js: true,
+      bs: false,
+      react: true,
+      thumb: thumbP1,
+      projectGit: "https://github.com/s0d4z3r0/totem-react",
+      projectView: "https://s0d4z3r0.github.io/totem-react/",
+    },
+  ]
 
-  const TotemGit = "https://github.com/s0d4z3r0/totem-react";
-  const TotemView = "https://s0d4z3r0.github.io/totem-react/";
 
   return (
     <section className={styles.projects}>
       <h2>Projetos</h2>
-      <div className={styles.card}>
-        <div className={styles.title}>
-          <h3>Sistema de Totem - Hamburgueria</h3>
-        </div>
-        <div className={styles.icons}>
-          <i>
-            <img src={html} alt="html" title="HTML 5" />
-          </i>
-          <i>
-            <img src={css} alt="css" title="CSS 3" />
-          </i>
-          <i>
-            <img src={js} alt="js" title="JavaScript ES6" />
-          </i>
-          <i>
-            <img src={bs} alt="bs" title="Bootstrap v5.3" />
-          </i>
-          <i>
-            <img src={react} alt="react" title="React" />
-          </i>
-        </div>
-        <div className={styles.image}>
-          <img src={thumb} alt="thumb projeto 1" />
-          <div className={styles.view}>
-            <a href={TotemGit} target="_blank" rel="noreferrer">
-              <i className={`bi bi-github ${styles.github}`}>
-                <span className={styles.tooltip}>Repositório GitHub</span>
-              </i>
-            </a>
-            <a href={TotemView} target="_blank" rel="noreferrer">
-              <i className={`bi bi-eye ${styles.eye}`}>
-                <span className={styles.tooltip}>Visualizar</span>
-              </i>
-            </a>
-          </div>
-        </div>
-        <div
-          className={`${styles.description} ${
-            showDescription ? styles.show : styles.hide
-          }`}
-        >
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum
-            cupiditate molestias? Dolorum, sunt! Possimus explicabo eius, alias
-            reprehenderit debitis nam hic? Laboriosam maxime tempora quidem ea
-            alias atque dolorum!
-          </p>
-          <span className={styles.more} onClick={handleShowDescription}>
-            {showDescription ? "Ver menos" : "Ver mais"}
-          </span>
-        </div>
-      </div>
+      <CardsProjects project={projects[0]}/>
     </section>
   );
 };

@@ -1,7 +1,15 @@
 .about{
-    padding: 5rem 0;
+    padding: 3rem 0;
     color: var(--color-oposity-color);
     position: relative;
+}
+.about h2{
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: var(--size-title);
+    padding: 0 0 3rem 0;
+    position: relative;
+    z-index: 1;
 }
 .shape1{
     width: 100%;

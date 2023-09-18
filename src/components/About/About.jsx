@@ -21,6 +21,7 @@ const About = () => {
 
   return (
     <section className={styles.about}>
+      <h2>Sobre</h2>
       <div className={styles.shape1}>
         <div className={styles.triangle1}></div>
         <div className={styles.triangle2}></div>
