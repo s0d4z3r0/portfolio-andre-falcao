@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 const Footer = () => {
     const gitHub = "https://github.com/s0d4z3r0"
     const linkedIn = "https://www.linkedin.com/in/andre-falcao-s0/"
-    const mailTo = "mailto:s0d4z3r0@gmail.com"
+    const mailTo = "mailto:dev.szero.pro@gmail.com"
     const instaGram = "https://www.instagram.com/dev.szero/"
     const whatsApp = " https://api.whatsapp.com/send?phone=5561981840029&text=Olá%20André!%20Acabei%20de%20ver%20seu%20portifólio%20e%20projetos%20pessoais%20e%20gostei%20do%20que%20vi"
 

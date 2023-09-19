@@ -47,12 +47,12 @@ body{
 }
 body::-webkit-scrollbar{
   width: 6px;
-  background: var(--color-black);
+  background: var(--color-emph);
 }
 body::-webkit-scrollbar-thumb{
   background-color: var(--color-secondary);
   border-radius: 5px;
-  border: 1px solid var(--color-black);
+  border: 1px solid var(--color-emph);
 }
 
 button{
