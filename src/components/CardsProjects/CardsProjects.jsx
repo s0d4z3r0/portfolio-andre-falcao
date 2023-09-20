@@ -23,8 +23,8 @@ const CardsProjects = ({
       className={`${styles.card} `}
       onMouseEnter={handleCard}
       onMouseLeave={handleCard}
-      onMouseDown={colorThumb ? "" : handleCard}
-      onMouseUp={colorThumb ? "" : handleCard}
+      onMouseDown={colorThumb ? undefined : handleCard}
+      onMouseUp={colorThumb ? undefined : handleCard}
     >
       <div className={styles.title}>
         <h3>{project.name}</h3>

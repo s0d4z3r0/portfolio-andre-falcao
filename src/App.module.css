@@ -1,3 +1,10 @@
+.alert{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    backdrop-filter: blur(3px);
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -15,4 +22,29 @@
     flex-direction: column;
     background-color: var(--color-default);
     position: relative;
+}
+.showAlert{
+    display: block;
+    animation: alertShow 800ms ease-in-out;
+}
+.hideAlert{
+    display: none;
+    animation: alertHide 800ms ease-in-out;
+}
+
+@keyframes alertShow{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+@keyframes alertHide{
+    0%{
+        display: block;
+        opacity: 1;
+    }100%{
+        display: none;
+        opacity: 0;
+    }
 }
