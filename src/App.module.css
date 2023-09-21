@@ -1,50 +1,112 @@
-.alert{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 100;
-    backdrop-filter: blur(3px);
+.alert {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1001;
+  backdrop-filter: blur(3px);
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 0.5rem;
-    background-color: var(--color-default);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 2;
-    box-shadow: 0px 1px 5px var(--color-shadow);
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  background-color: rgb(var(--color-default));
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 1px 5px var(--color-shadow);
 }
-.content{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-default);
-    position: relative;
+.menu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 100;
 }
-.showAlert{
-    display: block;
-    animation: alertShow 800ms ease-in-out;
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(var(--color-default));
+  position: relative;
 }
-.hideAlert{
-    display: none;
-    animation: alertHide 800ms ease-in-out;
+.toTop {
+  position: fixed;
+  z-index: 1001;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+.toTop button {
+  font-family: var(--font-text);
+  font-size: var(--size-title);
+  color: var(--color-secondary);
+  padding: 0rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 75px;
+  background-color: var(--color-emph);
+  cursor: pointer;
+  box-shadow: -1px 2px 0px 1px var(--color-tertiary);
+  transition: 50ms ease-in-out;
+  -webkit-tap-highlight-color: transparent;
+}
+.toTop button:hover {
+    background-color: var(--color-emph);
+  border-top: 1px solid var(--color-quaternary);
+  border-right: 1px solid var(--color-quaternary);
+  transform: translateY(-10px);
+  animation: toTopSlowly 0.5s;
+  animation-timing-function: ease-in-out;
+}
+.toTop button:active {
+  box-shadow: -1px 2px 0px 1px var(--color-tertiary);
+  border-top: 1px solid var(--color-quaternary);
+  border-right: 1px solid var(--color-quaternary);
+  margin-right: 0rem;
+  margin-top: 0rem;
+  background-color: var(--color-emph);
+  border-bottom: none;
+  border-left: none;
+}
+.showToTopButton {
+  display: block;
+  animation: alertShow 1s ease-in-out;
 }
 
-@keyframes alertShow{
-    0%{
-        opacity: 0;
-    }100%{
-        opacity: 1;
-    }
+.showAlert {
+  display: block;
+  animation: alertShow 800ms ease-in-out;
 }
-@keyframes alertHide{
-    0%{
-        display: block;
-        opacity: 1;
-    }100%{
-        display: none;
-        opacity: 0;
-    }
+.hideAlert {
+  display: none;
+  animation: alertHide 800ms ease-in-out;
+}
+
+@keyframes alertShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes alertHide {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes toTopSlowly {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }

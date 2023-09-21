@@ -73,7 +73,7 @@
   align-items: center;
   gap: 1rem;
   margin: 0 1rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   border-radius: 10px;
   background-color: var(--color-emph);
   box-shadow: -2px 2px 5px var(--color-shadow);
@@ -130,62 +130,64 @@
   border-radius: 5px;
   border: 1px solid var(--color-emph);
 }
-.contact form .button{
+.contact form .button {
   width: 100%;
   display: flex;
   justify-content: center;
   height: 2rem;
 }
-.contact form .button button{
-    position: absolute;
+.contact form .button button {
+  width: 16rem;
+  position: absolute;
 }
-.contact form .button button:active{
-  margin-right: .3rem;
-  margin-top: .2rem;
-}
-
-.celEmail{
-    text-align: justify;
-    padding: 3rem 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-.celEmail ul{
-    width: fit-content;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-.celEmail ul li a{
-    text-decoration: none;
-    font-family: var(--font-subtitle);
-}
-.celEmail ul li a i{
-    font-style: normal;
-    font-size: var(--size-titleText);
-    color: var(--color-oposity-color);
-    transition: 300ms ease-in-out;
-}
-.celEmail ul li a i:hover{
-    text-shadow: -2px 2px 5px var(--color-secondary);
+.contact form .button button:active {
+  margin-right: 0.3rem;
+  margin-top: 0.2rem;
 }
 
-.errorShow{
+.celEmail {
+  text-align: justify;
+  padding: 3rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.celEmail ul {
+  width: fit-content;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.celEmail ul li a {
+  text-decoration: none;
+  font-family: var(--font-subtitle);
+}
+.celEmail ul li a i {
+  font-style: normal;
+  font-size: var(--size-titleText);
+  color: var(--color-oposity-color);
+  transition: 300ms ease-in-out;
+}
+.celEmail ul li a i:hover {
+  text-shadow: -2px 2px 5px var(--color-secondary);
+}
+
+.errorShow {
   display: block;
   animation: show 500ms ease-in-out;
 }
-.errorHide{
+.errorHide {
   display: none;
 }
 
 @keyframes show {
-  0%{
+  0% {
     display: none;
     transform: translateY(-10px);
     opacity: 0;
-  }100%{
+  }
+  100% {
     display: block;
     transform: translateY(0px);
     opacity: 1;

@@ -28,7 +28,7 @@
 }
 
 .icons{
-    background-color: var(--color-default);
+    background-color: rgb(var(--color-default));
     border-radius: 10px;
     width: auto;
     display: flex;
@@ -74,9 +74,9 @@
     width: 10rem;
     display: flex;
     justify-content: space-around;
-    border: 1px solid var(--color-default);
+    border: 1px solid rgb(var(--color-default));
     border-radius: 0 0 10px 10px;
-    background-color: var(--color-default);
+    background-color: rgb(var(--color-default));
     color: var(--color-secondary);
     padding: 0.3rem 0;
 }
@@ -100,7 +100,7 @@
 }
 .tooltip{
     background-color: var(--color-oposity-color);
-    color: var(--color-default);
+    color: rgb(var(--color-default));
     font-family: var(--font-text);
     font-weight: bold;
     padding: 5px 10px;

@@ -42,6 +42,7 @@ const Contact = ({ setConfirmSendEmail }) => {
       setMessageError(false);
     }
   };
+
   useEffect(() => {
     if (nameError === false && emailError === false && messageError === false) {
       const templatePrams = {
@@ -58,9 +59,9 @@ const Contact = ({ setConfirmSendEmail }) => {
           "1-j26-5SEoG3uyIft"
         )
         .then((res) => {
-          console.log("Email enviado", res.status, res.text);
+          console.log(`Email enviado! Status: ${res.status} ${res.text}`);
         }, (err) => {
-          console.log('ERRO: ', err)
+          console.log(`ERRO: ${err}`)
         });
 
       setConfirmSendEmail((prevConfirmSendEmail) => !prevConfirmSendEmail);

@@ -32,7 +32,7 @@
 }
 .switch + label:before{
     right: 1px;
-    background-color: var(--color-default);
+    background-color: rgb(var(--color-default));
     border-radius: 25px;
     transition: all 0.4s;
 }
@@ -45,7 +45,7 @@
     transition: all 0.4s;
 }
 .switch:checked + label:before{
-    background-color: var(--color-default);
+    background-color: rgb(var(--color-default));
 }
 .switch:checked + label:after{
     box-shadow: -1px 0px 5px rgba(255, 255, 255, .8);

@@ -1,0 +1,67 @@
+.menu{
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(var(--color-default), .8);
+    backdrop-filter: blur(3px);
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    box-shadow: inset 0px 1px 5px var(--color-shadow);
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px var(--color-shadow);
+}
+.menu ul li{
+    border-bottom: 1px solid rgba(170, 170, 170, .5);
+    color: var(--color-secondary);
+    font-family: var(--font-text);
+    font-size: var(--size-text);
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+.menu ul li:hover{
+    background-color: var(--color-secondary);
+    color: rgb(var(--color-default));
+}
+
+.showMenu{
+    display: block;
+    opacity: 1;
+    animation-name: swipeDown;
+    animation-duration: 500ms;
+    transform: translateY(0);
+}
+
+.hideMenu{
+    display: block;
+    opacity: 0;
+    animation-name: swipeUp;
+    animation-duration: 500ms;
+    transform: translateY(-185px);
+}
+
+@keyframes swipeDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-185px);
+    }100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes swipeUp{
+    0%{
+        opacity: 1;
+        display: block;
+        transform: translateY(0);
+    }100%{
+        opacity: 0;
+        transform: translateY(-185px);
+    }
+}

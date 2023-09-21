@@ -1,7 +1,7 @@
 .footer{
     padding: 1rem 0 .5rem;
     width: 100%;
-    background-color: var(--color-default);
+    background-color: rgb(var(--color-default));
 }
 .icons{
     display: flex;
@@ -39,25 +39,23 @@
     border-radius: 25px;
     transition: 300ms ease-in-out;
 }
+.icons ul li a i:hover{
+    color: rgb(var(--color-default));
+}
 .icons ul li:nth-child(1) a i:hover{
     filter: drop-shadow(0px 0px 3px var(--color-oposity-color));
-    color: var(--color-default);
 }
 .icons ul li:nth-child(2) a i:hover{
     filter: drop-shadow(0px 0px 3px #086ba4);
-    color: var(--color-default);
 }
 .icons ul li:nth-child(3) a i:hover{
     filter: drop-shadow(0px 0px 3px red);
-    color: var(--color-default);
 }
 .icons ul li:nth-child(4) a i:hover{
     filter: drop-shadow(0px 0px 3px #a8795d);
-    color: var(--color-default);
 }
 .icons ul li:nth-child(5) a i:hover{
     filter: drop-shadow(0px 0px 3px #15f12b);
-    color: var(--color-default);
 }
 
 .createdBy{
@@ -65,7 +63,7 @@
     justify-content: center;
 }
 .createdBy p{
-    background-color: var(--color-default);
+    background-color: rgb(var(--color-default));
     box-shadow: -2px 2px 5px var(--color-shadow);
     width: fit-content;
     padding: .3rem .5rem;

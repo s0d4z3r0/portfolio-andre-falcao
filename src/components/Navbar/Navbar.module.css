@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 1000;
 }
 .menuLogo{
     display: flex;
@@ -12,6 +12,9 @@
     font-size: 1.2rem;
     line-height: 1rem;
     gap: .5rem;
+}
+.menuLogo i{
+    cursor: pointer;
 }
 .menuLogo button{
     border: none;

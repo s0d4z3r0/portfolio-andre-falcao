@@ -1,6 +1,6 @@
 .projects{
     padding: 3rem 0;
-    background-color: var(--color-default);
+    background-color: rgb(var(--color-default));
     color: var(--color-oposity-color);
     position: relative;
 }

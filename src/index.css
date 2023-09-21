@@ -7,7 +7,7 @@
   --color-quaternary: #94E177;
   --color-cancel: #e40f0f;
 
-  --color-default: #E1E1E1;
+  --color-default: 225, 225, 225;
   --color-emph: #ebebeb;
   --color-oposity-color: #1C1C1C;
   --color-black: #1c1c1c;
@@ -24,7 +24,7 @@
 }
 
 [className='dark']{
-  --color-default: #1C1C1C;
+  --color-default: 28, 28, 28;
   --color-emph: #161616;
   --color-oposity-color: #efefef;
   --color-black: #1c1c1c;
@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb{
 
 button{
   font-family: var(--font-subtitle);
-  font-size: var(--font-text);
+  font-size: var(--size-text);
   color: var(--color-oposity-color);
   padding: 0.1rem 2rem 0rem 2rem;
   border: none;
