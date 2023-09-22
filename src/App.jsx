@@ -48,22 +48,24 @@ function App() {
     }
   };
 
-  // Click out menu or out navbar to close
+  // Click out menu or out navbar to hide
   const menuRef = useRef();
 
   useEffect(() => {
     const clickOut = (e) => {
-      if (menuRef.current && !menuRef.current.contains(e.target)) {
-        setShowMenu(false);
+      if(menuRef.current && e.target.className === 'bi bi-list'){
+        setShowMenu(!showMenu)
+      } else{
+        setShowMenu(false)
       }
     };
 
-    document.addEventListener("mousedown", clickOut);
+    document.addEventListener("click", clickOut);
 
     return () => {
-      document.removeEventListener("mousedown", clickOut);
+      document.removeEventListener("click", clickOut);
     };
-  }, []);
+  }, [showMenu]);
 
   // Button to top
   const [scrollPositionY, setScrollPositionY] = useState(0);
@@ -86,6 +88,7 @@ function App() {
 
       <div className={styles.navbar} ref={menuRef}>
         <Navbar
+          showMenu={showMenu}
           setShowMenu={setShowMenu}
           handleScrollToRef={handleScrollToRef}
         />
@@ -110,10 +113,10 @@ function App() {
         <div ref={aboutRef}>
           <About />
         </div>
-        {scrollPositionY >= 455 ? (
+        {scrollPositionY >= 320 ? (
           <div className={`${styles.toTop} ${styles.showToTopButton}`}>
             <button onClick={() => handleScrollToRef("home")}>
-              <i className="bi bi-arrow-up-circle-fill"></i>
+              <i className="bi bi-arrow-up-circle"></i>
             </button>
           </div>
         ) : (

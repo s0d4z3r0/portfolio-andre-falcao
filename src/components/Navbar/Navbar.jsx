@@ -1,14 +1,11 @@
 import styles from "./Navbar.module.css";
 
-const Navbar = ({setShowMenu, handleScrollToRef}) => {
-  const handleShowMenu = () => {
-    setShowMenu(showMenu => !showMenu)
-  }
+const Navbar = ({handleScrollToRef}) => {
 
   return (
     <nav className={styles.navbar}>
       <div className={styles.menuLogo}>
-        <i className="bi bi-list" onClick={handleShowMenu}></i>
+        <i className="bi bi-list"></i>
         <button onClick={() => handleScrollToRef('home')}>
           <h4>SZero</h4>
         </button>

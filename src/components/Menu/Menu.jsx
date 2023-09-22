@@ -24,3 +24,8 @@ const Menu = ({showMenu, setShowMenu, handleScrollToRef}) => {
 }
 
 export default Menu
+
+
+/*
+Já settei o nome das setDivClicked como 'bi-list' e 'menu'. Fazer a lógica no App.jsx, se e.target.className não contiver setDivClicked setShowMenu pra False
+*/ 

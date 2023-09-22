@@ -38,37 +38,36 @@
 .toTop button {
   font-family: var(--font-text);
   font-size: var(--size-title);
-  color: var(--color-secondary);
+  color: var(--color-emph);
   padding: 0rem;
-  width: 2rem;
-  height: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 75px;
-  background-color: var(--color-emph);
+  border: none;
+  background-color: var(--color-primary);
   cursor: pointer;
-  box-shadow: -1px 2px 0px 1px var(--color-tertiary);
+  box-shadow: 0px 0px 10px  var(--color-secondary);
   transition: 50ms ease-in-out;
   -webkit-tap-highlight-color: transparent;
 }
 .toTop button:hover {
-    background-color: var(--color-emph);
-  border-top: 1px solid var(--color-quaternary);
-  border-right: 1px solid var(--color-quaternary);
+  background-color: var(--color-secondary);
+  box-shadow: 0px 0px 10px  var(--color-primary);
+  border: none;
   transform: translateY(-10px);
   animation: toTopSlowly 0.5s;
   animation-timing-function: ease-in-out;
 }
 .toTop button:active {
-  box-shadow: -1px 2px 0px 1px var(--color-tertiary);
-  border-top: 1px solid var(--color-quaternary);
-  border-right: 1px solid var(--color-quaternary);
+  background-color: var(--color-secondary);
+  box-shadow: 0px 0px 10px  var(--color-primary);
+  border: none;
   margin-right: 0rem;
   margin-top: 0rem;
-  background-color: var(--color-emph);
-  border-bottom: none;
-  border-left: none;
+  background-color: var(--color-secondary);
 }
 .showToTopButton {
   display: block;
