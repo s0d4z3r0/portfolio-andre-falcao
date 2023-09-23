@@ -9,7 +9,7 @@
     margin: 0 auto;
     border-radius: 10px;
     background-color: var(--color-emph);
-    box-shadow: -2px 2px 5px var(--color-secondary);
+    box-shadow: -4px 4px 10px rgba(var(--color-shadow-green), .3);
     color: var(--color-oposity-color);
     z-index: 1;
     transform: scale(.95);

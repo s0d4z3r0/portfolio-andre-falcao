@@ -13,7 +13,7 @@
 }
 .shape1{
     width: 100%;
-    height: 13%;
+    height: 7rem;
     position: absolute;
     top: 0;
     transform: scaleY(-1);
@@ -22,7 +22,7 @@
 }
 .shape2{
     width: 100%;
-    height: 13%;
+    height: 7rem;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -60,7 +60,7 @@
     margin: 0 1rem;
     border-radius: 10px;
     background-color: var(--color-emph);
-    box-shadow: -2px 2px 5px var(--color-shadow);
+    box-shadow: -4px 4px 10px var(--color-shadow);
     z-index: 1;
 }
 .show{

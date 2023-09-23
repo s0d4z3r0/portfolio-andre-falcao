@@ -1,5 +1,9 @@
-import { useEffect, useRef, useState } from "react";
 import styles from "./App.module.css";
+
+// Hooks
+import { useEffect, useRef, useState } from "react";
+
+// Components
 import DarkMode from "./components/DarkMode/DarkMode";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
@@ -53,10 +57,10 @@ function App() {
 
   useEffect(() => {
     const clickOut = (e) => {
-      if(menuRef.current && e.target.className === 'bi bi-list'){
-        setShowMenu(!showMenu)
-      } else{
-        setShowMenu(false)
+      if (menuRef.current && e.target.className === "bi bi-list") {
+        setShowMenu(!showMenu);
+      } else {
+        setShowMenu(false);
       }
     };
 

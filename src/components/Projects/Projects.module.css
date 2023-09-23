@@ -9,6 +9,9 @@
     text-align: center;
     font-family: var(--font-title);
     font-size: var(--size-title);
-    padding: 0 0 3rem 0;
+    padding: 0 0 1rem 0;
 }
 
+.mySwiper{
+    height: 35rem;
+}
