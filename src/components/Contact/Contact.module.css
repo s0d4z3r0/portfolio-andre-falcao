@@ -162,6 +162,7 @@
 .celEmail ul li a {
   text-decoration: none;
   font-family: var(--font-subtitle);
+  -webkit-tap-highlight-color: transparent;
 }
 .celEmail ul li a i {
   font-style: normal;

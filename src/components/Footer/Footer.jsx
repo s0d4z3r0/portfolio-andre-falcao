@@ -13,27 +13,27 @@ const Footer = () => {
       <div className={styles.icons}>
         <ul>
             <li>
-                <a href={gitHub}>
+                <a href={gitHub} target="_blank" rel="noreferrer">
                 <i className={`bi bi-github`}></i>
                 </a>
             </li>
             <li>
-                <a href={linkedIn}>
+                <a href={linkedIn} target="_blank" rel="noreferrer">
                 <i className={`bi bi-linkedin`}></i>
                 </a>
             </li>
             <li>
-                <a href={mailTo}>
+                <a href={mailTo} target="_blank" rel="noreferrer">
                 <i className={`bi bi-envelope-fill`}></i>
                 </a>
             </li>
             <li>
-                <a href={instaGram}>
+                <a href={instaGram} target="_blank" rel="noreferrer">
                 <i className={`bi bi-instagram`}></i>
                 </a>
             </li>
             <li>
-                <a href={whatsApp}>
+                <a href={whatsApp} target="_blank" rel="noreferrer">
                 <i className={`bi bi-whatsapp`}></i>
                 </a>
             </li>
@@ -44,7 +44,7 @@ const Footer = () => {
           Portifólio idealizado e criado por: {''}
           <span>
             &copy;
-            <a href={gitHub}>André Falcão</a>
+            <a href={gitHub} target="_blank" rel="noreferrer">André Falcão</a>
           </span>
         </p>
       </div>

@@ -31,6 +31,7 @@
     display: flex;
     justify-content: center;
     border-radius: 25px;
+    -webkit-tap-highlight-color: transparent;
 }
 .icons ul li a i{
     display: flex;

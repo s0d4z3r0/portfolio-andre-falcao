@@ -88,6 +88,13 @@ button:active {
   border-left: 1px solid var(--color-tertiary);
 }
 
+.swiper-wrapper{
+  padding-bottom: 1rem;
+}
+.swiper-pagination{
+  position: relative;
+  margin-top: 1rem;
+}
 span.swiper-pagination-bullet {
   background-color: var(--color-secondary);
 }
@@ -95,6 +102,7 @@ span.swiper-pagination-bullet {
 .swiper-button-next {
   position: absolute;
   color: var(--color-secondary);
+  -webkit-tap-highlight-color: transparent;
 }
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
@@ -103,28 +111,12 @@ span.swiper-pagination-bullet {
 }
 .swiper-button-next::after {
   position: absolute;
-  left: 15px;
+  left: 10px;
   font-size: 1.5rem;
 }
 .swiper-button-prev::after {
   position: absolute;
   font-size: 1.5rem;
-  right: 15px;
-}
-.swiper-button-disabled {
-  display: none;
-  animation-name: transitionToDisabled;
-  animation-duration: 150ms;
-  animation-timing-function: ease-in-out;
+  right: 10px;
 }
 
-@keyframes transitionToDisabled {
-  0% {
-    opacity: 1;
-    display: flex;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}

@@ -7,6 +7,7 @@
     left: 0;
     width: 100%;
     box-shadow: inset 0px 1px 5px var(--color-shadow);
+    -webkit-tap-highlight-color: transparent;
 }
 .menu ul{
     list-style: none;
@@ -24,6 +25,7 @@
     padding: 0.5rem;
     cursor: pointer;
     transition: .1s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
 }
 .menu ul li:hover{
     background-color: var(--color-secondary);
