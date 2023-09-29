@@ -4,6 +4,7 @@ import styles from "./Projects.module.css";
 import CardsProjects from "../CardsProjects/CardsProjects";
 
 // Img
+import thumbTimer from "../../assets/thumb-timer.jpg";
 import thumbTodo from "../../assets/thumb-todo.jpg";
 import thumbTotem from "../../assets/thumb-totem.jpg";
 
@@ -17,9 +18,22 @@ import "swiper/css/pagination";
 const Projects = () => {
   const projects = [
     {
+      name: "SZero Timer - Pomodoro (React)",
+      description:
+        "Este é um timer/Pomodoro que oferece opções de 5, 15 e 30 minutos. Dispõe de funcionalidades para iniciar, pausar e reiniciar. Ao atingir zero, exibe um modal alertando que o tempo se esgotou. Além disso, foi implementado um modo escuro (dark mode). O projeto faz uso de hooks, como o useState para armazenar valores e o useEffect para monitorar alterações de alguns estados. A estilização foi aprimorada com o uso de CSS modular e global, proporcionando uma apresentação visual mais atraente. A aplicação é responsiva, adaptando-se a telas pequenas, médias e grandes.",
+      html: true,
+      css: true,
+      js: true,
+      bs: false,
+      react: true,
+      thumb: thumbTimer,
+      projectGit: "https://github.com/s0d4z3r0/timer-react",
+      projectView: "https://s0d4z3r0.github.io/timer-react/",
+    },
+    {
       name: "Lista de Tarefas - To-Do (React)",
       description:
-        "Este projeto foi feito com React + Vite e BootStrap para compor seu estilo e responsividade. Foi feito com base nos conhecimentos aprendidos de React e JS como useState e useEffect, componentização e props, array de objetos, spread operator. Além da responsividade padrão do BootStrap, ainda foi feito alguns ajustes para telas menores com CSS Global e função com evento 'resize' para alterar placeholders de forma dinâmica.",
+      "Desenvolvi este projeto utilizando React + Vite e Bootstrap para garantir tanto sua funcionalidade dinâmica quanto seu design responsivo. A construção foi fundamentada nos princípios essenciais do React e JavaScript, como a aplicação de useState e useEffect, a utilização eficiente de componentização e props, manipulação de arrays de objetos e emprego do spread operator. Além de incorporar a responsividade padrão do Bootstrap, realizei ajustes personalizados para garantir uma experiência otimizada em telas menores. Para isso, empreguei CSS Global e implementei uma função com o evento 'resize' para modificar os placeholders de maneira dinâmica.",
       html: true,
       css: true,
       js: true,
@@ -32,7 +46,7 @@ const Projects = () => {
     {
       name: "Sistema de Totem - Hamburgueria",
       description:
-        "Este projeto foi realizado com HTML, CSS e JS (JSX - React + Vite), sendo idealizado um projeto de totem para fazer pedidos em estabelecimentos físicos. Conta com uma tela inicial (HOME), seguindo para uma tela de fazer o pedido (MENU). Foi utilizado vários conhecimentos aprendidos do framework React como componentização, router-dom, hooks, css modules, redux, criação e reaproveitamento de states e modais. Foi trabalhado a responsividade seguindo o princípio mobile first, com media querys mínima de 320px.",
+      "Este projeto foi concebido e implementado com React + Vite utilizando HTML, CSS e JSX, com a proposta de ser um totem virtual para facilitar pedidos em estabelecimentos físicos. Ele apresenta uma tela inicial (HOME) e uma interface para realizar pedidos (MENU). Durante o desenvolvimento, apliquei diversos conceitos do framework React, como a prática de componentização, a utilização do router-dom, o emprego de hooks, CSS modules, a implementação do Redux e a criação e reutilização eficiente de estados e modais. Além disso, dediquei atenção especial à responsividade, seguindo a abordagem mobile first, com media queries configuradas para um mínimo de 320px.",
       html: true,
       css: true,
       js: true,
@@ -48,9 +62,9 @@ const Projects = () => {
     <section className={styles.projects}>
       <h2>Projetos</h2>
       <Swiper
-      cssMode={true}
-      slidesPerView={1}
-        keyboard={{enabled: true}}
+        cssMode={true}
+        slidesPerView={1}
+        keyboard={{ enabled: true }}
         pagination={{
           dynamicBullets: true,
           clickable: true,
@@ -62,14 +76,20 @@ const Projects = () => {
         <SwiperSlide>
           <br />
           <CardsProjects project={projects[0]} />
-          <br/>
-          <br/>
+          <br />
+          <br />
         </SwiperSlide>
         <SwiperSlide>
           <br />
           <CardsProjects project={projects[1]} />
-          <br/>
-          <br/>
+          <br />
+          <br />
+        </SwiperSlide>
+        <SwiperSlide>
+          <br />
+          <CardsProjects project={projects[2]} />
+          <br />
+          <br />
         </SwiperSlide>
       </Swiper>
     </section>
