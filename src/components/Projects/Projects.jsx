@@ -21,7 +21,7 @@ const Projects = () => {
     {
       name: "Diet React - Kcal Calculator",
       description:
-      "Diet React é uma inovadora calculadora que utiliza a fórmula de Harris-Benedict (1919) para estimar o gasto calórico, levando em consideração os objetivos individuais e o nível de atividade de cada usuário. Desenvolvido com React, o projeto incorpora conceitos avançados, como componentes modulares, hooks como useState e useEffect. Implementei também funções para validar os dados inseridos, garantindo precisão nos resultados. Além disso, adotei a abordagem mobile first para proporcionar uma experiência de usuário otimizada, assegurando a responsividade em diferentes dispositivos.",
+        "Diet React é uma inovadora calculadora que utiliza a fórmula de Harris-Benedict (1919) para estimar o gasto calórico, levando em consideração os objetivos individuais e o nível de atividade de cada usuário. Desenvolvido com React, o projeto incorpora conceitos avançados, como componentes modulares, hooks como useState e useEffect. Implementei também funções para validar os dados inseridos, garantindo precisão nos resultados. Além disso, adotei a abordagem mobile first para proporcionar uma experiência de usuário otimizada, assegurando a responsividade em diferentes dispositivos.",
       html: true,
       css: true,
       js: true,
@@ -47,7 +47,7 @@ const Projects = () => {
     {
       name: "Lista de Tarefas - To-Do",
       description:
-      "Desenvolvi este projeto utilizando React + Vite e Bootstrap para garantir tanto sua funcionalidade dinâmica quanto seu design responsivo. A construção foi fundamentada nos princípios essenciais do React e JavaScript, como a aplicação de useState e useEffect, a utilização eficiente de componentização e props, manipulação de arrays de objetos e emprego do spread operator. Além de incorporar a responsividade padrão do Bootstrap, realizei ajustes personalizados para garantir uma experiência otimizada em telas menores. Para isso, empreguei CSS Global e implementei uma função com o evento 'resize' para modificar os placeholders de maneira dinâmica.",
+        "Desenvolvi este projeto utilizando React + Vite e Bootstrap para garantir tanto sua funcionalidade dinâmica quanto seu design responsivo. A construção foi fundamentada nos princípios essenciais do React e JavaScript, como a aplicação de useState e useEffect, a utilização eficiente de componentização e props, manipulação de arrays de objetos e emprego do spread operator. Além de incorporar a responsividade padrão do Bootstrap, realizei ajustes personalizados para garantir uma experiência otimizada em telas menores. Para isso, empreguei CSS Global e implementei uma função com o evento 'resize' para modificar os placeholders de maneira dinâmica.",
       html: true,
       css: true,
       js: true,
@@ -60,7 +60,7 @@ const Projects = () => {
     {
       name: "Sistema de Totem - Hamburgueria",
       description:
-      "Este projeto foi concebido e implementado com React + Vite utilizando HTML, CSS e JSX, com a proposta de ser um totem virtual para facilitar pedidos em estabelecimentos físicos. Ele apresenta uma tela inicial (HOME) e uma interface para realizar pedidos (MENU). Durante o desenvolvimento, apliquei diversos conceitos do framework React, como a prática de componentização, a utilização do router-dom, o emprego de hooks, CSS modules, a implementação do Redux e a criação e reutilização eficiente de estados e modais. Além disso, dediquei atenção especial à responsividade, seguindo a abordagem mobile first, com media queries configuradas para um mínimo de 320px.",
+        "Este projeto foi concebido e implementado com React + Vite utilizando HTML, CSS e JSX, com a proposta de ser um totem virtual para facilitar pedidos em estabelecimentos físicos. Ele apresenta uma tela inicial (HOME) e uma interface para realizar pedidos (MENU). Durante o desenvolvimento, apliquei diversos conceitos do framework React, como a prática de componentização, a utilização do router-dom, o emprego de hooks, CSS modules, a implementação do Redux e a criação e reutilização eficiente de estados e modais. Além disso, dediquei atenção especial à responsividade, seguindo a abordagem mobile first, com media queries configuradas para um mínimo de 320px.",
       html: true,
       css: true,
       js: true,
@@ -87,24 +87,14 @@ const Projects = () => {
         modules={[Pagination, Navigation, Keyboard]}
         className={styles.mySwiper}
       >
-        <SwiperSlide>
-          <br />
-          <CardsProjects project={projects[0]} />
-          <br />
-          <br />
-        </SwiperSlide>
-        <SwiperSlide>
-          <br />
-          <CardsProjects project={projects[1]} />
-          <br />
-          <br />
-        </SwiperSlide>
-        <SwiperSlide>
-          <br />
-          <CardsProjects project={projects[2]} />
-          <br />
-          <br />
-        </SwiperSlide>
+        {projects.map((projectCard) => (
+          <SwiperSlide key={projectCard.name}>
+            <br />
+            <CardsProjects project={projectCard} />
+            <br />
+            <br />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );
