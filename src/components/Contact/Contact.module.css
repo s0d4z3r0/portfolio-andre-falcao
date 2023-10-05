@@ -205,6 +205,10 @@
 @media (min-width: 768px){
   .contact {
     padding: 5rem 0;
+  }  
+  .content form{
+    padding: var(--size-title);
+    width: 23rem;
   }
   .contact h2 {
     margin-top: 2rem;
