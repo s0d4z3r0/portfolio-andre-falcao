@@ -206,3 +206,9 @@ span.more:hover, span.more:active{
         transform: scaleY(1);
     }
 }
+
+@media (min-width: 768px) {
+    .description p{
+        font-size: var(--size-subtext);
+    }
+}

@@ -32,21 +32,24 @@ const About = () => {
         <p>
           Olá, me chamo André Vinícius Rodrigues Falcão, tenho {age} anos e sou
           natural de Manaus-AM, mas quase um brasiliense, pois moro em
-          Brasilia-DF desde 2007. Casado e sem filhos meus hobbies são jogos
+          Brasilia-DF desde 2007. <br></br>
+          Casado e sem filhos meus hobbies são jogos
           eletronicos (FPS, MOBA e MMORPG), assistir filmes (Terror, Suspense e
           Drama), maratonar séries (de tudo um pouco), assistir streammers,
           ouvir música (eclético, mas com bom gosto), conhecer lugares novos
           para comer (de comidas básicas à comidas diferentes), cozinhar (quem
           gosta de comer tem que saber cozinhar), treinar musculação
           (BIIIIRRRLL), futebol americano (GO Giants) e encontrar a felicidade
-          em coisas simples da vida. Já jogou CS:GO? Pois é, me respeita que eu
+          em coisas simples da vida. <br></br>
+          Já jogou CS:GO? Pois é, me respeita que eu
           sou da geração do CS 1.5. E um Lolzinho, tu curte? Só não vai me dizer
           que joga de Yasuo. Já jogou Ragnarok ou WOW? bom demais, né não?! E
           filmes?! Dormiu bem depois de ter assistido Atividade Paranormal? Qual
           sua comida favorita? A minha começa com &#34;To&#34; e termina com &#34;das&#34;. Mas
           não dá só pra comer né?! Você ta cuidando da saúde?! Tá fazendo
           atividade física?! Se sim, é isso aí!!! Assiste algum esporte? Futebol
-          americano é muito bom, vai por mim!! Enfim... A vida é bela, basta
+          americano é muito bom, vai por mim!! <br></br>
+          Enfim... A vida é bela, basta
           você encontrar a felicidade nas coisas simples da vida.
         </p>
         <span className={styles.more} onClick={() => handleShowCard('who')}>{showWho ? 'Ver menos' : 'Ver mais'}</span>
@@ -64,7 +67,8 @@ const About = () => {
         <p>
           Formado em Gestão Pública pela universidade Cruzeiro do Sul, com MBA
           em Marketing e Comunicação decidi empreender, porém em um ramo que já
-          tinha certo conhecimento, na área de alimentação. Da área de
+          tinha certo conhecimento, na área de alimentação. <br></br>
+          Da área de
           alimentação resolvi então entrar de cabeça na área da programação, uma
           área que sempre tive interesse, mas sempre deixei de lado por achar
           que seria difícil aprender algo do zero. Na programação comecei a
@@ -76,7 +80,8 @@ const About = () => {
           profissional. Após adquirir um certo conhecimento de Front-End com os
           cursos realizados, hoje continuo estudando por conta própria e me
           dedicando a realizar projetos para compor este portfólio e criar
-          novas soluções para o dia a dia. Este portfólio foi desenvolvido 100%
+          novas soluções para o dia a dia. <br></br>
+          Este portfólio foi desenvolvido 100%
           utilizando técnicas e conhecimentos adquiridos como HTML, CSS, JS e
           JSX, React + Vite, componentização, hooks, entre outros. Como
           profissional, o que pode se esperar de mim é um colaborador que veste

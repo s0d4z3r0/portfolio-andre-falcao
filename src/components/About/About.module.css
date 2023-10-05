@@ -1,150 +1,208 @@
-.about{
-    padding: 3rem 0;
-    color: var(--color-oposity-color);
-    position: relative;
+.about {
+  padding: 3rem 0;
+  color: var(--color-oposity-color);
+  position: relative;
 }
-.about h2{
-    text-align: center;
-    font-family: var(--font-title);
-    font-size: var(--size-title);
-    padding: 0 0 3rem 0;
-    position: relative;
-    z-index: 1;
+.about h2 {
+  text-align: center;
+  font-family: var(--font-title);
+  font-size: var(--size-title);
+  padding: 0 0 3rem 0;
+  position: relative;
+  z-index: 1;
 }
-.shape1{
-    width: 100%;
-    height: 7rem;
-    position: absolute;
-    top: 0;
-    transform: scaleY(-1);
-    opacity: .8;
-    z-index: 0;
+.shape1 {
+  width: 100%;
+  height: 7rem;
+  position: absolute;
+  top: 0;
+  transform: scaleY(-1);
+  opacity: 0.8;
+  z-index: 0;
 }
-.shape2{
-    width: 100%;
-    height: 7rem;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: scaleX(-1);
-    opacity: .8;
-    z-index: 0;
+.shape2 {
+  width: 100%;
+  height: 7rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: scaleX(-1);
+  opacity: 0.8;
+  z-index: 0;
 }
-.triangle1{
-    width: 100%;
-    height: 100%;
-    background-color: #11a11c;
-    clip-path: polygon(0 0, 0% 100%, 100% 100%);
-    position: absolute;
+.triangle1 {
+  width: 100%;
+  height: 100%;
+  background-color: #11a11c;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  position: absolute;
 }
-.triangle2{
-    width: 100%;
-    height: 100%;
-    background-color: #11a81c;
-    clip-path: polygon(0 0, 0% 100%, 80% 100%);
-    position: absolute;
+.triangle2 {
+  width: 100%;
+  height: 100%;
+  background-color: #11a81c;
+  clip-path: polygon(0 0, 0% 100%, 80% 100%);
+  position: absolute;
 }
-.triangle3{
-    width: 100%;
-    height: 100%;
-    background-color: #11b21c;
-    clip-path: polygon(0 0, 0% 100%, 60% 100%);
-    position: absolute;
+.triangle3 {
+  width: 100%;
+  height: 100%;
+  background-color: #11b21c;
+  clip-path: polygon(0 0, 0% 100%, 60% 100%);
+  position: absolute;
 }
 
-.who, .professional{
-    display: flex;
-    flex-direction: column;
-    padding: var(--size-text);
-    position: relative;
-    margin: 0 1rem;
-    border-radius: 10px;
-    background-color: var(--color-emph);
-    box-shadow: -4px 4px 10px var(--color-shadow);
-    z-index: 1;
+.who,
+.professional {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  padding: var(--size-text);
+  position: relative;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: var(--color-emph);
+  box-shadow: -4px 4px 10px var(--color-shadow);
+  z-index: 1;
 }
-.show{
-    height: auto;
-    animation: show;
-    animation-duration: 2s;
+.show {
+  height: auto;
+  animation: show;
+  animation-duration: 2s;
 }
-.hide{
-    animation: hide;
-    animation-duration: .5s;
+.hide {
+  animation: hide;
+  animation-duration: 0.5s;
 }
-.who h2, 
-.professional h2{
-    width: 15.5rem;
-    padding: .8rem 0;
-    font-family: var(--font-title);
-    font-size: var(--size-titleText);
-    margin-left: auto;
-    border-left: 5px solid var(--color-secondary);
-    text-align: end;
+.who h2,
+.professional h2 {
+  width: 15.5rem;
+  padding: 0.8rem 0;
+  font-family: var(--font-title);
+  font-size: var(--size-titleText);
+  margin-left: auto;
+  border-left: 5px solid var(--color-secondary);
+  text-align: end;
 }
-.professional h2{
-    width: 14.5rem;
-    padding: 0;
-    text-align: left;
-    margin-left: 0;
-    margin-right: auto;
-    border-left: none;
-    border-right: 5px solid var(--color-secondary);
+.professional h2 {
+  width: 14.5rem;
+  padding: 0;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+  border-left: none;
+  border-right: 5px solid var(--color-secondary);
 }
-.who p, .phrase h4, .professional p{
-    font-family: var(--font-text);
-    font-size: var(--size-text);
-    text-align: justify;
-    position: relative;
+.who p,
+.phrase h4,
+.professional p {
+  font-family: var(--font-text);
+  font-size: var(--size-text);
+  text-align: justify;
+  position: relative;
 }
-.hide p{
-    margin-top: 1.8rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
+.hide p {
+  margin-top: 1.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
 }
-.show p{
-    margin-top: 1.8rem;
-    display: block;
-    overflow: auto;
-    text-overflow: ellipsis;
-    word-wrap: normal;
+.show p {
+  margin-top: 1.8rem;
+  display: block;
+  overflow: auto;
+  text-overflow: ellipsis;
+  word-wrap: normal;
 }
-.phrase h4{
-    margin: 2.5rem auto;
-    width: 15rem;
-    text-align: center;
-    color: var(--color-secondary);
+.phrase h4 {
+  margin: 2.5rem auto;
+  width: 15rem;
+  text-align: center;
+  color: var(--color-secondary);
 }
-span.more{
-    width: fit-content;
-    margin: .5rem 0;
-    margin-left: auto;
-    position: relative; 
-    cursor: pointer;
-    font-family: var(--font-text);
-    color: var(--color-secondary);
-    -webkit-tap-highlight-color: transparent;
+span.more {
+  width: fit-content;
+  margin: 0.5rem 0;
+  margin-left: auto;
+  position: relative;
+  cursor: pointer;
+  font-family: var(--font-text);
+  color: var(--color-secondary);
+  -webkit-tap-highlight-color: transparent;
 }
-span.more:hover, span.more:active{
-    color: var(--color-primary);
+span.more:hover,
+span.more:active {
+  color: var(--color-primary);
 }
 
 @keyframes show {
-    0%{
-        opacity: 0;
-    }100%{
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes hide {
-    0%{
-        opacity: 0;
-    }100%{
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
+@media (min-width: 375px) {
+  .who,
+  .professional {
+    width: 21rem;
+  }
+  .who h2,
+  .professional h2 {
+    width: 18.5rem;
+  }
+  .professional h2 {
+    width: 18.5rem;
+    padding: 0 3rem 0 0;
+  }
+}
+@media (min-width: 425px) {
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding: 5rem 0;
+  }
+  .about h2 {
+    font-size: var(--size-title);
+  }
+  .who,
+  .professional {
+    margin-top: 2rem;
+    width: 42rem;
+    padding: var(--size-text);
+  }
+
+  .who h2,
+  .professional h2 {
+    width: 38.5rem;
+    font-size: var(--size-titleText);
+  }
+  .professional h2 {
+    width: 38.5rem;
+    padding: 0 28rem 0 0;
+  }
+  .who p,
+  .phrase h4,
+  .professional p {
+    font-size: var(--size-subtext);
+    text-align: justify;
+    position: relative;
+  }
+  .phrase h4 {
+    width: 26rem;
+  }
+}

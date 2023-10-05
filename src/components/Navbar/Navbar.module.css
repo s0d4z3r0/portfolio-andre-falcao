@@ -1,41 +1,42 @@
-.navbar{
-    color: var(--color-oposity-color);
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
+.navbar {
+  color: var(--color-oposity-color);
+  height: var(--size-title);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
 }
-.menuLogo{
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    line-height: 1rem;
-    gap: .5rem;
+.menuLogo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  gap: 0.5rem;
 }
-.menuLogo i{
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    padding: .4rem;
+.menuLogo i {
+    font-size: var(--size-titleText);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0.4rem;
 }
-.menuLogo button{
-    border: none;
-    background-color: transparent;
-    color: var(--color-secondary);
-    font-size: 1rem;
-    font-family: var(--font-title);
-    cursor: pointer;
-    box-shadow: none;
-    padding: 0;
+.menuLogo button {
+  border: none;
+  background-color: transparent;
+  color: var(--color-secondary);
+  font-size: var(--siz-text);
+  font-family: var(--font-title);
+  cursor: pointer;
+  box-shadow: none;
+  padding: 0;
 }
-.menuLogo button:hover{
-    background-color: transparent;
-    border: none;
-  }
-  .menuLogo button:active{
-    box-shadow: none;
-    border: none;
-    margin: 0;
-    background-color: transparent;
-    border: none;
-  }
+.menuLogo button:hover {
+  background-color: transparent;
+  border: none;
+}
+.menuLogo button:active {
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}

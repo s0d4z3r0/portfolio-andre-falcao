@@ -16,7 +16,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const Projects = () => {
+const Projects = ({widthScreen}) => {
   const projects = [
     {
       name: "Diet React - Kcal Calculator",
@@ -75,6 +75,17 @@ const Projects = () => {
   return (
     <section className={styles.projects}>
       <h2>Projetos</h2>
+      {widthScreen >= 768 ? 
+      (
+        <div className={styles.projectsCards}>
+          {projects.map((projectCard) => (
+            <div key={projectCard.name}>
+              <CardsProjects project={projectCard} />
+            </div>
+          ))}
+        </div>
+      ) : 
+      (
       <Swiper
         cssMode={true}
         slidesPerView={1}
@@ -96,6 +107,7 @@ const Projects = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      )}
     </section>
   );
 };

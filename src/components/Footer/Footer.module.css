@@ -84,3 +84,12 @@
 .icons ul li a i:active, .createdBy p span a:active{
 -webkit-tap-highlight-color: transparent;
 }
+
+@media (min-width: 768px) {
+    .icons ul{
+        width: 22rem;
+    }
+    .createdBy p{
+        width: 30rem;
+    }
+}

@@ -3,7 +3,7 @@
     z-index: 100;
     background-color: rgba(var(--color-default), .8);
     backdrop-filter: blur(3px);
-    top: 2rem;
+    top: var(--size-title);
     left: 0;
     width: 100%;
     box-shadow: inset 0px 1px 5px var(--color-shadow);

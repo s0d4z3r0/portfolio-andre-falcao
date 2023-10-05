@@ -40,8 +40,8 @@
   font-size: var(--size-title);
   color: var(--color-emph);
   padding: 0rem;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: var(--size-title);
+  height: var(--size-title);
   display: flex;
   justify-content: center;
   align-items: center;

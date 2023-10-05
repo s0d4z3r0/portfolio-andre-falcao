@@ -80,6 +80,20 @@ function App() {
 
   window.addEventListener("scroll", getPagePositionY);
 
+  // Monitorar o width da tela
+  const [widthScreen, setWidthScreen] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const changeWidthScreen = () => {
+      setWidthScreen(window.innerWidth)
+    }  
+
+    window.addEventListener('resize', changeWidthScreen)
+
+    return () => window.removeEventListener('resize', changeWidthScreen)
+  }, [])
+
+
   return (
     <div className={styles.app}>
       <div
@@ -128,7 +142,7 @@ function App() {
         )}
 
         <div ref={projectsRef}>
-          <Projects />
+          <Projects widthScreen={widthScreen}/>
         </div>
         <div ref={contactRef}>
           <Contact setConfirmSendEmail={setConfirmSendEmail} />
