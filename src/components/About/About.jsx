@@ -34,23 +34,18 @@ const About = () => {
           natural de Manaus-AM, mas quase um brasiliense, pois moro em
           Brasilia-DF desde 2007. <br></br>
           Casado e sem filhos meus hobbies são jogos
-          eletronicos (FPS, MOBA e MMORPG), assistir filmes (Terror, Suspense e
-          Drama), maratonar séries (de tudo um pouco), assistir streammers,
-          ouvir música (eclético, mas com bom gosto), conhecer lugares novos
+          eletronicos (FPS, MOBA e MMORPG), assistir filmes/séries/streammers (terror, suspense e
+          drama), ouvir música (eclético, mas com bom gosto), conhecer lugares novos
           para comer (de comidas básicas à comidas diferentes), cozinhar (quem
           gosta de comer tem que saber cozinhar), treinar musculação
-          (BIIIIRRRLL), futebol americano (GO Giants) e encontrar a felicidade
+          (No Pain, No Gain), assistir futebol americano (GO Giants) e encontrar a felicidade
           em coisas simples da vida. <br></br>
-          Já jogou CS:GO? Pois é, me respeita que eu
-          sou da geração do CS 1.5. E um Lolzinho, tu curte? Só não vai me dizer
-          que joga de Yasuo. Já jogou Ragnarok ou WOW? bom demais, né não?! E
+          Já jogou CS, Lolzinho, Ragnarok ou WOW? bom demais, né não?! E
           filmes?! Dormiu bem depois de ter assistido Atividade Paranormal? Qual
-          sua comida favorita? A minha começa com &#34;To&#34; e termina com &#34;das&#34;. Mas
-          não dá só pra comer né?! Você ta cuidando da saúde?! Tá fazendo
-          atividade física?! Se sim, é isso aí!!! Assiste algum esporte? Futebol
-          americano é muito bom, vai por mim!! <br></br>
-          Enfim... A vida é bela, basta
-          você encontrar a felicidade nas coisas simples da vida.
+          sua comida favorita? É difícil escolher só uma pra mim. Mas
+          não dá só pra comer né?! Você ta cuidando da saúde?! praticando alguma 
+          atividade física?! Se sua resposta é &#34;Sim!&#34;, é isso aí!!! Acompanha algum esporte? Futebol americano é muito bom, vai por mim!! <br></br>
+          Enfim... A vida é bela, basta você encontrar a felicidade nas coisas simples da vida.
         </p>
         <span className={styles.more} onClick={() => handleShowCard('who')}>{showWho ? 'Ver menos' : 'Ver mais'}</span>
       </div>
@@ -86,10 +81,7 @@ const About = () => {
           JSX, React + Vite, componentização, hooks, entre outros. Como
           profissional, o que pode se esperar de mim é um colaborador que veste
           a camisa da organização e se compromete com metas. Pensamento
-          analítico e visão de negócio também são características notadas. Uma
-          visão mais Tática da organização para saber lidar com concorrências,
-          mapeando pontos fortes da organização e fortalecendo pontos fracos
-          também pode-se esperar de mim. Uma pessoa com sede de aprender e
+          analítico e visão de negócio também são características minhas. Uma pessoa com sede de aprender e
           ensinar. Pronto para encarar desafios, motivar e fortalecer o espírito
           de equipe na organização. Let&#39;s to code!
         </p>
