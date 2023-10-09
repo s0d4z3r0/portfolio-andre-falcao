@@ -41,7 +41,7 @@ const Footer = () => {
       </div>
       <div className={styles.createdBy}>
         <p>
-          Portifólio idealizado e criado por: {''}
+          Portfólio idealizado e criado por: {''}
           <span>
             &copy;
             <a href={gitHub} target="_blank" rel="noreferrer">André Falcão</a>
