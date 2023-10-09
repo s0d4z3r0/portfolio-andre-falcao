@@ -1,8 +1,7 @@
-# React + Vite
+# **Portifólio André Falcão**
+## _Portifólio em React_
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto **Portifólio André Falcão** feito em **React + Vite**.
+O projeto consiste no meu portifólio pessoal com menu, darkmode, about, projetos já realizados, contato, redes pessoais e botão para visualizar currículo.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### [Visualize aqui meu Portifólio](https://s0d4z3r0.github.io/portifolio-andre-falcao/)
