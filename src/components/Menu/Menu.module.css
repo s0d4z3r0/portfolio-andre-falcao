@@ -33,16 +33,13 @@
 }
 
 .showMenu{
-    display: block;
-    opacity: 1;
     animation-name: swipeDown;
     animation-duration: 500ms;
     transform: translateY(0);
 }
 
 .hideMenu{
-    display: block;
-    opacity: 0;
+    display: none;
     animation-name: swipeUp;
     animation-duration: 500ms;
     transform: translateY(-185px);

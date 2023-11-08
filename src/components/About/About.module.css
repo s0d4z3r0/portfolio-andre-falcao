@@ -170,6 +170,14 @@ span.more:active {
   }
 }
 @media (min-width: 425px) {
+  .who,
+  .professional {
+    width: 88.5%;
+  }
+  .who h2,
+  .professional h2 {
+    width: 97.5%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -182,18 +190,15 @@ span.more:active {
   .who,
   .professional {
     margin-top: 2rem;
-    width: 42rem;
     padding: var(--size-text);
   }
 
   .who h2,
   .professional h2 {
-    width: 38.5rem;
     font-size: var(--size-titleText);
   }
   .professional h2 {
-    width: 38.5rem;
-    padding: 0 28rem 0 0;
+    line-height: 3.8rem;
   }
   .who p,
   .phrase h4,
@@ -203,6 +208,21 @@ span.more:active {
     position: relative;
   }
   .phrase h4 {
+    text-align: center;
     width: 26rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hide p {
+    display: block;
+  }
+  span.more {
+    display: none;
+  }
+}
+@media (min-width: 1274px) {
+  .who,
+  .professional {
+    width: 1200px;
   }
 }

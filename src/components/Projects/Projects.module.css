@@ -1,45 +1,51 @@
-.projects{
-    padding: 3rem 0;
-    background-color: rgb(var(--color-default));
-    color: var(--color-oposity-color);
-    position: relative;
+.projects {
+  padding: 3rem 0;
+  background-color: rgb(var(--color-default));
+  color: var(--color-oposity-color);
+  position: relative;
 }
 
-.projects h2{
-    text-align: center;
-    font-family: var(--font-title);
-    font-size: var(--size-title);
-    padding: 0 0 1rem 0;
+.projects h2 {
+  text-align: center;
+  font-family: var(--font-title);
+  font-size: var(--size-title);
+  padding: 0 0 1rem 0;
 }
 
-.projectsCards{
-    width: 45rem;
+.projectsCards {
+  width: 45rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.mySwiper {
+  height: auto;
+}
+
+@media (min-width: 375px) {
+  .mySwiper {
+    width: 21rem;
+  }
+}
+@media (min-width: 425px) {
+  .mySwiper {
+    width: 22rem;
+  }
+}
+@media (min-width: 768px) {
+  .projects {
+    padding: 5rem 0;
+  }
+  .projectsCards {
+    width: 95%;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 1274px) {
+  .projects {
+    width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  }
 }
-
-.mySwiper{
-    height: auto;
-}
-
-@media (min-width: 375px){
-    .mySwiper{
-        width: 21rem;
-    }
-}
-@media (min-width: 425px){
-    .mySwiper{
-        width: 22rem;
-    }
-}
-@media (min-width: 768px){
-    .projects{
-        padding: 5rem 0;
-    }
-    .projectsCards{
-        margin-top: 2rem;
-    }
-}
-

@@ -16,7 +16,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const Projects = ({widthScreen}) => {
+const Projects = ({ widthScreen }) => {
   const projects = [
     {
       name: "Diet React - Kcal Calculator",
@@ -75,38 +75,104 @@ const Projects = ({widthScreen}) => {
   return (
     <section className={styles.projects}>
       <h2>Projetos</h2>
-      {widthScreen >= 768 ? 
-      (
-        <div className={styles.projectsCards}>
-          {projects.map((projectCard) => (
-            <div key={projectCard.name}>
-              <CardsProjects project={projectCard} />
+      {widthScreen >= 768 ? (
+        widthScreen >= 1024 ? (
+          widthScreen >= 1440 ? (
+            <div className={styles.projectsCards}>
+              <Swiper
+                cssMode={true}
+                slidesPerView={4}
+                keyboard={{ enabled: true }}
+                pagination={{
+                  dynamicBullets: true,
+                  clickable: true,
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation, Keyboard]}
+                className={styles.mySwiper}
+              >
+                {projects.map((projectCard) => (
+                  <SwiperSlide key={projectCard.name}>
+                    <br />
+                    <CardsProjects project={projectCard} />
+                    <br />
+                    <br />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
+          ) : (
+            <div className={styles.projectsCards}>
+              <Swiper
+                cssMode={true}
+                slidesPerView={3}
+                keyboard={{ enabled: true }}
+                pagination={{
+                  dynamicBullets: true,
+                  clickable: true,
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation, Keyboard]}
+                className={styles.mySwiper}
+              >
+                {projects.map((projectCard) => (
+                  <SwiperSlide key={projectCard.name}>
+                    <br />
+                    <CardsProjects project={projectCard} />
+                    <br />
+                    <br />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          )
+        ) : (
+          <div className={styles.projectsCards}>
+            <Swiper
+              cssMode={true}
+              slidesPerView={2}
+              keyboard={{ enabled: true }}
+              pagination={{
+                dynamicBullets: true,
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation, Keyboard]}
+              className={styles.mySwiper}
+            >
+              {projects.map((projectCard) => (
+                <SwiperSlide key={projectCard.name}>
+                  <br />
+                  <CardsProjects project={projectCard} />
+                  <br />
+                  <br />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        )
+      ) : (
+        <Swiper
+          cssMode={true}
+          slidesPerView={1}
+          keyboard={{ enabled: true }}
+          pagination={{
+            dynamicBullets: true,
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation, Keyboard]}
+          className={styles.mySwiper}
+        >
+          {projects.map((projectCard) => (
+            <SwiperSlide key={projectCard.name}>
+              <br />
+              <CardsProjects project={projectCard} />
+              <br />
+              <br />
+            </SwiperSlide>
           ))}
-        </div>
-      ) : 
-      (
-      <Swiper
-        cssMode={true}
-        slidesPerView={1}
-        keyboard={{ enabled: true }}
-        pagination={{
-          dynamicBullets: true,
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation, Keyboard]}
-        className={styles.mySwiper}
-      >
-        {projects.map((projectCard) => (
-          <SwiperSlide key={projectCard.name}>
-            <br />
-            <CardsProjects project={projectCard} />
-            <br />
-            <br />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        </Swiper>
       )}
     </section>
   );
