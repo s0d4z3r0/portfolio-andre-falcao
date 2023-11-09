@@ -5,6 +5,7 @@ import cssIcon from "../../assets/css.png";
 import jsIcon from "../../assets/js.png";
 import bsIcon from "../../assets/bs.png";
 import reactIcon from "../../assets/react.png";
+import sass from "../../assets/sass.png"
 
 const CardsProjects = ({
   project
@@ -61,6 +62,13 @@ const CardsProjects = ({
         {project.react ? (
           <i>
             <img src={reactIcon} alt="react" title="React" />
+          </i>
+        ) : (
+          ""
+        )}
+        {project.sass ? (
+          <i>
+            <img src={sass} alt="sass" title="Sass" />
           </i>
         ) : (
           ""

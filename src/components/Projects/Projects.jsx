@@ -8,6 +8,7 @@ import thumbDiet from "../../assets/thumb-diet.jpg";
 import thumbTimer from "../../assets/thumb-timer.jpg";
 import thumbTodo from "../../assets/thumb-todo.jpg";
 import thumbTotem from "../../assets/thumb-totem.jpg";
+import thumbCosts from "../../assets/thumb-costs.jpg";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -69,6 +70,19 @@ const Projects = ({ widthScreen }) => {
       thumb: thumbTotem,
       projectGit: "https://github.com/s0d4z3r0/totem-react",
       projectView: "https://s0d4z3r0.github.io/totem-react/",
+    },
+    {
+      name: "Gerenciador de Projetos - Costs",
+      description:
+        "O Costs é uma ferramenta para gerenciamento de projetos e serviços, oferecendo detalhes como o custo total do projeto e a alocação de recursos para cada serviço. Desenvolvido utilizando React + Vite, este aplicativo possui um sistema de backend simulado usando o json server local para realizar requisições, simulando uma API com Banco de Dados. O fluxo de operações CRUD para os 'projetos' é feito através dessas requisições, e o roteamento é implementado com o React Router. Para aprimorar a experiência do usuário, foi adicionado um setTimeOut que simula um 'loader' de requisição. Isso é particularmente útil, dado que, com o backend local, as requisições são praticamente instantâneas. Além disso, o projeto foi estilizado e tornou-se responsivo utilizando SASS, proporcionando um aproveitamento mais eficiente do código. Para iniciar o backend, basta executar o seguinte script: 'npm run backend'.",
+      html: true,
+      sass: true,
+      js: true,
+      bs: false,
+      react: true,
+      thumb: thumbCosts,
+      projectGit: "https://github.com/s0d4z3r0/costs",
+      projectView: "https://s0d4z3r0.github.io/costs/",
     },
   ];
 
