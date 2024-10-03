@@ -73,7 +73,7 @@ const About = () => {
           o curso de Desenvolvedor Back-End pela mesma instituição. Migrando de
           área, resolvi alterar a rota que estava traçando na minha vida
           profissional. Após adquirir um certo conhecimento de Front-End com os
-          cursos realizados, hoje continuo estudando por conta própria e me
+          cursos realizados, decidi ingressar em uma instituição de ensino. Hoje curso Engenharia de Software no IESB (Centro Universitário Instituto de Educação Superior de Brasília) e me
           dedicando a realizar projetos para compor este portfólio e criar
           novas soluções para o dia a dia. <br></br>
           Este portfólio foi desenvolvido 100%
