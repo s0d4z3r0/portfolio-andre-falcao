@@ -19,7 +19,7 @@ const Home = ({ darkOrLightMode }) => {
           Eu sou André Falcão</p>
         <p>| Front-End Developer |</p>
         <div className={styles.more}>
-          <a className="download" href="https://drive.google.com/file/d/1zoa1dttgPMkJKE4G13O1J4L3ZSuBGzmW/view?usp=sharing" target="_blank" rel="noreferrer" download="Currículo André Falcão.pdf">Currículo</a>
+          <a className="download" href="https://drive.google.com/file/d/1GF7OaJY6NTwwxfVoAyOie8tEd8-W9eNz/view?usp=sharing" target="_blank" rel="noreferrer" download="Currículo André Falcão.pdf">Currículo</a>
         </div>
       </div>
     </section>
